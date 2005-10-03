@@ -1,4 +1,5 @@
 Summary:	Graphical frontend to communicate with mobiles
+Summary(pl):	Graficzny interfejs do komunikacji z urz±dzeniami przeno¶nymi
 Name:		obextool
 Version:	0.33
 Release:	0.1
@@ -16,14 +17,20 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_packagedir	%{_datadir}/%{name}
 
 %description
-ObexTool is a graphical frontend to communicate with mobiles and other devices capable of communicating via Obex Protocol.
+ObexTool is a graphical frontend to communicate with mobiles and other
+devices capable of communicating via Obex Protocol.
+
+%description -l pl
+ObexTool to graficzny interfejs do komunikacji z urz±dzeniami
+przeno¶nymi i innymi urz±dzeniami potrafi±cymi komunikowaæ siê za
+pomoc± protoko³u Obex.
 
 %prep
 %setup -q
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_packagedir}/,%{_desktopdir}}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_packagedir},%{_desktopdir}}
 
 #install src/bin/secpanel $RPM_BUILD_ROOT%{_bindir}
 #cp -r src/lib/secpanel/* $RPM_BUILD_ROOT%{_packagedir}
