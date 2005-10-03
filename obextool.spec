@@ -6,7 +6,7 @@ Release:	0.1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.tech-edv.co.at/downloads/%{name}-%{version}.tar.gz
-# Source0-md5:	99f8e26f882e95399322e75ad777eacf
+# Source0-md5:	bdd4c7e35d353ac6bb5af98c8b6ae5a9
 #Source1:	%{name}.desktop
 URL:		http://www.tech-edv.co.at/programmierung/en/gplsw.html
 Requires:	tablelist
