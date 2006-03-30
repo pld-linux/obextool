@@ -36,22 +36,22 @@ cp -a etc/* $RPM_BUILD_ROOT%{_sysconfdir}/%{name}
 cp -a * $RPM_BUILD_ROOT%{_packagedir}
 rm -rf $RPM_BUILD_ROOT%{_packagedir}/{etc,doc}
 
-cat > $RPM_BUILD_ROOT%{_bindir}/obextool << EOF
+cat > $RPM_BUILD_ROOT%{_bindir}/obextool << 'EOF'
 #!/bin/sh
 # ObexTool startup shell
 #
 MODEM="/dev/modem"
-[ -n "\$1" ] && MODEM="\$1"
+[ -n "$1" ] && MODEM="$1"
 OBEXDIR=%{_packagedir}
 OBEXTOOL_CFG=%{_sysconfdir}/obextool
-OBEXTCMD="%{_bindir}/obexftp -t \${MODEM}"
+OBEXTCMD="%{_bindir}/obexftp -t ${MODEM}"
 export OBEXDIR OBEXTOOL_CFG OBEXTCMD
 #
 # Let's start the ObexTool without memory status
 # feature (if no Siemens), using Tk version 8.4 and
 # a specific configuration directory %{_sysconfdir}/obextool
 # and the contributed static compiled obexftp version.
-/bin/sh -c "%{_bindir}/wish \$OBEXDIR/obextool.tk --memstat 0"
+/bin/sh -c "%{_bindir}/wish $OBEXDIR/obextool.tk --memstat 0"
 EOF
 
 %clean
