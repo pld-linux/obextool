@@ -51,7 +51,7 @@ export OBEXDIR OBEXTOOL_CFG OBEXTCMD
 # feature (if no Siemens), using Tk version 8.4 and
 # a specific configuration directory %{_sysconfdir}/obextool
 # and the contributed static compiled obexftp version.
-/bin/sh -c "%{_bindir}/wish $OBEXDIR/obextool.tk --memstat 0"
+exec %{_bindir}/wish $OBEXDIR/obextool.tk --memstat 0
 EOF
 
 %clean
