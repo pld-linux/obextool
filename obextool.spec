@@ -8,10 +8,10 @@ Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/obextool/%{name}-%{version}.tar.gz
 # Source0-md5:	bdd4c7e35d353ac6bb5af98c8b6ae5a9
 URL:		http://www.tech-edv.co.at/programmierung/en/gplsw.html
+Requires:	obexftp
 Requires:	tablelist
 Requires:	tcl
 Requires:	tk-BWidget
-Requires:	obexftp
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_packagedir	%{_datadir}/%{name}
@@ -63,5 +63,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_packagedir}
 %dir %{_sysconfdir}/%{name}
-%attr(644,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/%{name}/*.???
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/%{name}/*.???
 %attr(755,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/%{name}/*.sh
