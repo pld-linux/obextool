@@ -1,5 +1,5 @@
 Summary:	Graphical frontend to communicate with mobiles
-Summary(pl):	Graficzny interfejs do komunikacji z urz±dzeniami przeno¶nymi
+Summary(pl.UTF-8):   Graficzny interfejs do komunikacji z urzÄ…dzeniami przenoÅ›nymi
 Name:		obextool
 Version:	0.33
 Release:	1
@@ -20,10 +20,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 ObexTool is a graphical frontend to communicate with mobiles and other
 devices capable of communicating via Obex Protocol.
 
-%description -l pl
-ObexTool to graficzny interfejs do komunikacji z urz±dzeniami
-przeno¶nymi i innymi urz±dzeniami potrafi±cymi komunikowaæ siê za
-pomoc± protoko³u Obex.
+%description -l pl.UTF-8
+ObexTool to graficzny interfejs do komunikacji z urzÄ…dzeniami
+przenoÅ›nymi i innymi urzÄ…dzeniami potrafiÄ…cymi komunikowaÄ‡ siÄ™ za
+pomocÄ… protokoÅ‚u Obex.
 
 %prep
 %setup -q
