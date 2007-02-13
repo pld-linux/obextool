@@ -1,5 +1,5 @@
 Summary:	Graphical frontend to communicate with mobiles
-Summary(pl.UTF-8):   Graficzny interfejs do komunikacji z urządzeniami przenośnymi
+Summary(pl.UTF-8):	Graficzny interfejs do komunikacji z urządzeniami przenośnymi
 Name:		obextool
 Version:	0.33
 Release:	1
