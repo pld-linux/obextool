@@ -2,16 +2,16 @@ Summary:	Graphical frontend to communicate with mobiles
 Summary(pl.UTF-8):	Graficzny interfejs do komunikacji z urządzeniami przenośnymi
 Name:		obextool
 Version:	0.35
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/obextool/%{name}-%{version}.tar.gz
 # Source0-md5:	4d225b365613fe88f49b3713d5c35136
 URL:		http://www.tech-edv.co.at/programmierung/en/gplsw.html
 Requires:	obexftp
-Requires:	tablelist
 Requires:	tcl
 Requires:	tk-BWidget
+Requires:	tklib
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_packagedir	%{_datadir}/%{name}
