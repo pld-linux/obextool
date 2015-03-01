@@ -2,7 +2,7 @@ Summary:	Graphical frontend to communicate with mobiles
 Summary(pl.UTF-8):	Graficzny interfejs do komunikacji z urządzeniami przenośnymi
 Name:		obextool
 Version:	0.35
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/obextool/%{name}-%{version}.tar.gz
